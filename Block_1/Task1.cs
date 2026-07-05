@@ -2,23 +2,22 @@ class Task1
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter your name: ");
-        string name = Console.ReadLine();
-
-        if (string.IsNullOrEmpty(name))
+        string name;
+        do
         {
-            Console.WriteLine("name is null");
-        }
+            Console.WriteLine("Enter your name: ");
+            name = Console.ReadLine();
+        } while(string.IsNullOrWhiteSpace(name));
 
-        Console.WriteLine("Enter your age: ");
-        string ageString = Console.ReadLine();
-
-        if (string.IsNullOrEmpty(ageString))
+        
+        string ageString;
+        int age;
+        do
         {
-            Console.WriteLine("age is null");
-        }
-
-        int age = int.Parse(ageString);
+            Console.WriteLine("Enter your age: ");
+            ageString = Console.ReadLine();
+            
+        } while(!int.TryParse(ageString, out age));
 
         Console.WriteLine($"Привет, {name}! Через 5 лет тебе будет {age + 5} лет.");
     }
