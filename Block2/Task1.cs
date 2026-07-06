@@ -1,7 +1,7 @@
 namespace task1_1
 {
-        public class Player
-        {
+    public class Player
+    {
         private string _name;
         private int _health;
         private int _score;
@@ -104,24 +104,24 @@ namespace task1_1
     }
 
     class Task1
-{
-    static void Main(string[] args)
     {
-        Player player = new ("James", 56, 33);
+        static void Main(string[] args)
+        {
+            Player player = new ("James", 56, 33);
         
-        player.Name = "John";
-        player.Health = 34;
-        player.Score = 555;
+            player.Name = "John";
+            player.Health = 34;
+            player.Score = 555;
 
-        player.TakeDamage(1);
-        player.AddScore(1);
+            player.TakeDamage(1);
+            player.AddScore(1);
 
-        player.PrintInfo();
+            player.PrintInfo();
 
-        Player player2 = new ("Player2", 3, 3);
+            Player player2 = new ("Player2", 3, 3);
 
-        Console.WriteLine($"Total players: {Player.ShowTotalPlayers()}");
+            Console.WriteLine($"Total players: {Player.ShowTotalPlayers()}");
+        }
     }
-}
 }
 

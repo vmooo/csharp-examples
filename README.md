@@ -25,14 +25,21 @@ Classes, objects, properties, constructors
 ### Task 1
 
 Create a `Player` class with fields:
-- private string name;
-- private int health;
-- private int score;
+- `private string name;`
+- `private int health;`
+- `private int score;`
 
 Add:
+- A constructor with parameters (`name`, `health`, `score`).
+- `Read/write` properties (with validation: health cannot be below 0 or above 100; name cannot be empty).
+- The `void TakeDamage(int damage)` method reduces health, but not below 0.
+- The `void AddScore(int points)` method.
+- The `void PrintInfo()` method displays the player's status.
 
-- A constructor with parameters (name, health, score).
-- Read/write properties (with validation: health cannot be below 0 or above 100; name cannot be empty).
-- The void TakeDamage(int damage) method reduces health, but not below 0.
-- The void AddScore(int points) method.
-- The void PrintInfo() method displays the player's status.
+Add a `static int totalPlayers` field to the Player class, which is incremented in the constructor. Add a `static void ShowTotalPlayers()` method. Test your work.
+
+### Block 3
+
+Inheritance, polimorphism, interfaces
+
+### 
