@@ -1,4 +1,4 @@
-namespace task1_1
+namespace task2_1
 {
     public class Player
     {
