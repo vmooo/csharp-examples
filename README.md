@@ -42,4 +42,14 @@ Add a `static int totalPlayers` field to the Player class, which is incremented 
 
 Inheritance, polimorphism, interfaces
 
-### 
+### Task 1
+
+Create a base class called Enemy with the properties string Name, int Health, and a virtual method void TakeDamage(int damage) that reduces health.
+
+Create the following classes:
+
+Goblin – when taking damage, it additionally displays "Goblin squeals!"
+
+Troll – has an additional field called int Regeneration and an overridden method called TakeDamage: after taking damage, health is restored by the amount of Regeneration every second (simulate this with Thread.Sleep(1000) and a loop – or simply add regeneration right away, we'll simplify things). For simplicity, just add health restoration equal to the regeneration amount after calling the base method.
+
+Create a List<Enemy>, add different enemies, iterate through them, and call TakeDamage(10) on each – demonstrating polymorphism.
