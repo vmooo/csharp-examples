@@ -1,7 +1,7 @@
 # csharp-examples
 Some basic training tasks in C#.
 
-The problem texts were prepared using DeppSeek.
+The problem texts were prepared using DeepSeek.
 
 ## Block 1
 
@@ -53,3 +53,10 @@ Goblin – when taking damage, it additionally displays `"Goblin squeals!"`
 Troll – has an additional field called `int Regeneration` and an overridden method called `TakeDamage`: after taking damage, health is restored by the amount of Regeneration every second
 
 Create a `List<Enemy>`, add different enemies, iterate through them, and call `TakeDamage(10)` on each – demonstrating polymorphism.
+
+### Task 2
+
+1. Create an `IDamageable` interface with a `void TakeDamage(int damage)` method.
+2. Implement it in the `Player` class (from the previous assignment) and in all enemy classes (`Enemy`, `Goblin`, `Troll`).
+3. Write a static method `static void Attack(IDamageable target, int damage)` that calls `target.TakeDamage(damage)`.
+4. Demonstrate this in `Main()`: create a `Player` object and enemy objects, pass them to `Attack`, and verify that their health changes.
