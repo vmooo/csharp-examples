@@ -38,7 +38,7 @@ Add:
 
 Add a `static int totalPlayers` field to the Player class, which is incremented in the constructor. Add a `static void ShowTotalPlayers()` method. Test your work.
 
-### Block 3
+## Block 3
 
 Inheritance, polimorphism, interfaces
 
@@ -69,3 +69,10 @@ Collections, LINQ, delegates, events
 
 Create `List<int>` with numbers from 1 to 20. Using LINQ (System.Linq):
 - Select all even numbers, sort them in descending order, take the first 5, and output them to the console.
+
+### Task 2
+
+- Create a `Timer` class with an `Action Tick` event (or a custom delegate).
+- Implement a `Start(int intervalMs)` method that runs a loop with a delay (use `Thread.Sleep` or `Task.Delay`; `Thread.Sleep` is simpler for a console application). The loop should continue running until a key is pressed (e.g., using `Console.ReadKey()`).
+- Raise the `Tick` event on every "tick."
+- In `Main()`, subscribe to the event and output "Tick!" or the current time to the console.
