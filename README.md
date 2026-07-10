@@ -60,3 +60,12 @@ Create a `List<Enemy>`, add different enemies, iterate through them, and call `T
 2. Implement it in the `Player` class (from the previous assignment) and in all enemy classes (`Enemy`, `Goblin`, `Troll`).
 3. Write a static method `static void Attack(IDamageable target, int damage)` that calls `target.TakeDamage(damage)`.
 4. Demonstrate this in `Main()`: create a `Player` object and enemy objects, pass them to `Attack`, and verify that their health changes.
+
+## Block 4
+
+Collections, LINQ, delegates, events
+
+### Task 1
+
+Create `List<int>` with numbers from 1 to 20. Using LINQ (System.Linq):
+- Select all even numbers, sort them in descending order, take the first 5, and output them to the console.
